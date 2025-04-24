@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.category-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    background-color: #e9ecef;
+    transform: scale(1.05);
+}
+
+.category-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.badge {
+    font-size: 0.6rem;
+}
+
+.price {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.discount {
+    color: #fff;
+    background-color: #dc3545;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.star-rating {
+    color: #ffc107;
+}
+
+.social-icons a {
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 30px 15px !important;
+    }
+    
+    .hero-banner h2 {
+        font-size: 1.5rem;
+    }
+}
